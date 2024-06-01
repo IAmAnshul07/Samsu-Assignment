@@ -19,11 +19,11 @@ const DraftBlog = () => {
           Create Blog
         </Button>
       </div>
+      {draftBlogs.length === 0 && (
+        <h1 className="text-center mt-10">No draft blogs</h1>
+      )}
       <div style={{ display: "flex", flex: "wrap" }}>
         <CreateNewBlog isOpen={openModal} toggleModal={toggleModal} />
-        {draftBlogs.length === 0 && (
-          <h1 className="text-center mt-10">No draft blogs</h1>
-        )}
         {!!draftBlogs.length &&
           draftBlogs.map((blog) => (
             <DraftCard
