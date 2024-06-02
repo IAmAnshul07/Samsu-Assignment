@@ -32,7 +32,7 @@
 
 ## Project Structure
 - `src/components`: Contains React components.
-- `src/pages`: Contains React APplication Pages.
+- `src/pages`: Contains React Application Pages.
 - `src/redux`: Contains Redux reducers and store.
 
 ## Demo
