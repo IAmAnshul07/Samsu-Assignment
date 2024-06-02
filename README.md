@@ -34,7 +34,6 @@
 - `src/components`: Contains React components.
 - `src/pages`: Contains React APplication Pages.
 - `src/redux`: Contains Redux reducers and store.
-- `public`: Contains public assets.
 
 ## Demo
 - [Live Demo](https://samsu-assignment.netlify.app/)
