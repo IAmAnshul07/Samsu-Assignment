@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Box, Card, CardContent, Typography } from "@mui/material";
+import Divider from "@mui/material/Divider";
 
 const BlogDetails = () => {
   const { id } = useParams();
@@ -9,19 +10,26 @@ const BlogDetails = () => {
   );
 
   if (!blog) {
-    return <h2>Blog post not found</h2>;
+    return (
+      <div className="flex justify-center items-center mt-10">
+        <h2>Blog Post Not Found</h2>
+      </div>
+    );
   }
 
   return (
-    <Box
-      sx={{ width: "100%", maxWidth: 800, margin: "0 auto", padding: "20px" }}
-    >
-      <Card>
+    <Box sx={{ width: "70%", margin: "0 auto", padding: "20px" }}>
+      <Card variant="outlined">
         <CardContent>
-          <Typography variant="h3" component="div">
+          <Typography variant="h5" component="div">
             {blog.title}
+            <Divider style={{ margin: "25px 0px 25px 0px" }} />
           </Typography>
-          <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+          <Typography
+            sx={{ fontSize: 14, marginBottom: "25px" }}
+            color="text.secondary"
+            gutterBottom
+          >
             {blog.author} - {new Date(blog.date).toLocaleDateString()}
           </Typography>
           <Typography

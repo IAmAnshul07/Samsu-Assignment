@@ -22,18 +22,33 @@ const DraftBlog = () => {
       {draftBlogs.length === 0 && (
         <h1 className="text-center mt-10">No draft blogs</h1>
       )}
-      <div style={{ display: "flex", flex: "wrap" }}>
-        <CreateNewBlog isOpen={openModal} toggleModal={toggleModal} />
+      <CreateNewBlog isOpen={openModal} toggleModal={toggleModal} />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
         {!!draftBlogs.length &&
           draftBlogs.map((blog) => (
-            <DraftCard
+            <div
               key={blog.id}
-              id={blog.id}
-              title={blog.title}
-              author={blog.author}
-              date={blog.date}
-              body={blog.body}
-            />
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                width: "100%",
+                marginBottom: "25px",
+              }}
+            >
+              <DraftCard
+                id={blog.id}
+                title={blog.title}
+                author={blog.author}
+                date={blog.date}
+                body={blog.body}
+              />
+            </div>
           ))}
       </div>
     </>

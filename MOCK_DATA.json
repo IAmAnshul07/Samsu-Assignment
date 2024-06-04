@@ -3,21 +3,21 @@
     "id": 1,
     "author": "Trescha",
     "date": "1/18/2024",
-    "body": "<p>Fusce consequat. Nulla nisl. Nunc nisl.</p>",
-    "title": "libero non mattis pulvinar nulla pede ullamcorper augue a suscipit"
+    "body": "<p>If you are a Senior DS at a company with a high bar, you can expect all of your peers to have strong technical skills. You wont stand out by incrementally improving your technical skillset, but rather by ensuring your work is driving maximum impact for your stakeholders (e.g. Product, Engineering, Biz teams).   This is where Business Acumen comes into play: In order to maximize your impact, you need to 1) deeply understand the priorities of the business and the problems your stakeholders are facing, 2) scope analytics solutions that directly help those priorities or address those problems, and 3) communicate your insights and recommendations in a way that your audience understands them (see #1 above).With strong Business Acumen, youll also be able to sanity check your work since youll have the business context and judgment to understand whether the result of your analysis, or your proposal, makes sense or not.</p>",
+    "title": "Strong business acumen is the biggest differentiator between good and great data scientists."
   },
   {
     "id": 2,
     "author": "Tammara",
     "date": "9/16/2023",
-    "body": "<p>Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.</p>",
-    "title": "lectus suspendisse potenti in eleifend quam a"
+    "body": "<p>This is a very well-known quote, and it perfectly sums up the best advice I was ever given. Only it wasnt from Jon Kabat Zin that I first heard it. It was from my mum and she wasnt exactly talking to me either. She was talking to my dad. He wanted to move, again. He had some issues settling down (the understatement of the century) and was always looking for the next best thing. The grass was always greener elsewhere. As they were discussing this, mum told him, “You can run away as far as you want, but you will always take yourself along for the journey.”For years I didnt listen to this advice. After all, it wasnt directed at me. In fact I ran away so far, if I would have gone any further I would be coming back. I moved all the way to New Zealand; its literally not possible to be further away from Belgium. To be fair, when we moved to New Zealand, it wasnt because we were ‘running away. We were looking for a different lifestyle, a little less fast-paced than Belgium's. </p>",
+    "title": "The Best Piece of Advice I Was Ever Given"
   },
   {
     "id": 3,
-    "author": "Carolus",
+    "author": "Sivan Hermon",
     "date": "1/6/2024",
-    "body": "<p>Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\n\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.</p>",
-    "title": "aenean sit amet justo morbi ut odio"
+    "body": "<p>Looking from the outside, one might assume Im a big deal. I've launched many products starting with an idea and earned a big-ticket promotion to Google Engineering Director. My work made a difference to millions of people. But had you spoken to me a year before that fancy promotion, youd have seen a frustrated Engineering Leader trying to offer value to their users (Googlers) by changing the approach to software development. I tried everything I could. I brought Agile methodologies into Google, to my teams dismay. I got Marty Cagan, a product management thought leader, to inspire us to do Dual-Track Agile. Those helped a bit, but it wasnt enough. Then, I discovered a game-changing product development framework. I know frameworks are often overhyped, but this one helped me drive a positive change in our approach to product development and helped me earn my promotion. I believe it can do the same for you. Lets dive in. How did it start? My friend, an avid learner, frequently shares valuable insights. Sensing my frustration with traditional product roadmaps, he sent me an article titled: “Why you should stop using product roadmaps and try the GIST Framework” by Itamar Gilad</p>",
+    "title": "My world was rocked! By a product development framework? What?!"
   }
 ]
