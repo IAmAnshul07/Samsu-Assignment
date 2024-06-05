@@ -29,7 +29,6 @@ const Carousel = () => {
     "Programming",
   ];
 
-  // Duplicate topics array for infinite scrolling
   const topicsWithDuplicates = [...topics, ...topics];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -48,11 +47,11 @@ const Carousel = () => {
 
   return (
     <>
-      <div className="relative w-full mt-4 lg:w-1/2 lg:ml-auto lg:mr-auto md:w-3/4 md:ml-auto md:mr-auto sm:w-11/12 sm:ml-auto sm:mr-auto">
-        <div className="overflow-hidden mx-5 rounded-[15px]">
+      <div className="relative w-[70%] mx-auto">
+        <div className="overflow-hidden rounded-[15px] w-full">
           <div
             id="scroller-items"
-            className="flex transition-transform duration-500 ease-in-out w-full relative"
+            className="flex transition-transform duration-500 ease-in-out relative"
             style={{ transform: `translateX(-${currentIndex * 96}px)` }} // Adjust 96px based on item width
           >
             {topicsWithDuplicates.map((topic, index) => (
@@ -69,7 +68,7 @@ const Carousel = () => {
             ))}
           </div>
         </div>
-        <div className="absolute top-1/2 transform -translate-y-1/2 left-0">
+        <div className="absolute top-1/2 transform -translate-y-1/2 left-[-25px]">
           <button
             onClick={scrollPrev}
             className=" text-gray-700 p-2 border-none "
@@ -77,7 +76,7 @@ const Carousel = () => {
             ❮
           </button>
         </div>
-        <div className="absolute top-1/2 transform -translate-y-1/2 right-0">
+        <div className="absolute top-1/2 transform -translate-y-1/2 right-[-25px]">
           <button
             onClick={scrollNext}
             className=" text-gray-700 p-2 border-none "
@@ -86,8 +85,8 @@ const Carousel = () => {
           </button>
         </div>
       </div>
-      <div className="mx-auto mt-4 w-[70%] lg:w-1/2 md:w-3/4 sm:w-11/12">
-        <Divider />
+      <div className="mx-auto w-full flex justify-center">
+        <Divider className="w-[77%]" />
       </div>
     </>
   );
