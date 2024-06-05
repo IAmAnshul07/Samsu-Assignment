@@ -19,7 +19,7 @@ const BlogDetails = () => {
 
   return (
     <Box sx={{ width: "70%", margin: "0 auto", padding: "20px" }}>
-      <Card variant="outlined">
+      <Card variant="outlined" className="border-none important">
         <CardContent>
           <Typography variant="h5" component="div">
             {blog.title}
@@ -30,7 +30,8 @@ const BlogDetails = () => {
             color="text.secondary"
             gutterBottom
           >
-            {blog.author} - {new Date(blog.date).toLocaleDateString()}
+            {blog.author} <span> · </span>
+            {new Date(blog.date).toLocaleDateString()}
           </Typography>
           <Typography
             variant="body1"
