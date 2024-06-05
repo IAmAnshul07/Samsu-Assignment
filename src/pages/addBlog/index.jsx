@@ -1,7 +1,6 @@
 import { useSelector } from "react-redux";
 import CreateNewBlog from "../../components/CreateBlogModal";
 import { useState } from "react";
-import { Button } from "@mui/material";
 import DraftCard from "../../components/Card/DraftCard";
 
 const DraftBlog = () => {
@@ -15,9 +14,12 @@ const DraftBlog = () => {
   return (
     <>
       <div style={{ margin: "10px" }}>
-        <Button variant="contained" onClick={() => toggleModal(true)}>
-          Create Blog
-        </Button>
+        <button
+          className="btn btn-active btn-neutral"
+          onClick={() => toggleModal(true)}
+        >
+          Add Blog
+        </button>
       </div>
       {draftBlogs.length === 0 && (
         <h1 className="text-center mt-10">No draft blogs</h1>

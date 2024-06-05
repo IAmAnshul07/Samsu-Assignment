@@ -30,29 +30,24 @@ const DraftCard = ({ title, author, date, body, id }) => {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
+          cursor: "pointer",
         }}
-        className="pointer"
+        className="pointer border-none important"
         onClick={() => toggleModal(true)}
       >
         <CardContent style={{ overflow: "hidden" }}>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-            }}
-          >
+          <div className="flex justify-between indicator mr-5">
+            <span className="indicator-item badge badge-primary bg-orange-300">
+              Draft
+            </span>
             <Typography
               sx={{ fontSize: 14 }}
               color="text.secondary"
               gutterBottom
+              className="mr-10"
             >
               {author}
-            </Typography>
-            <Typography
-              sx={{ fontSize: 14 }}
-              color="text.secondary"
-              gutterBottom
-            >
+              <span> · </span>
               {new Date(date).toLocaleDateString()}
             </Typography>
           </div>
@@ -60,9 +55,9 @@ const DraftCard = ({ title, author, date, body, id }) => {
             variant="h5"
             component="div"
             style={{ marginTop: "20px" }}
+            className="mb-10 important"
           >
             {title}
-            <Divider style={{ margin: "25px 0px 25px 0px" }} />
           </Typography>
           <Typography
             variant="body2"
@@ -77,6 +72,7 @@ const DraftCard = ({ title, author, date, body, id }) => {
             dangerouslySetInnerHTML={{ __html: body }}
           ></Typography>
         </CardContent>
+        <Divider />
       </Card>
       {openModal && (
         <CreateNewBlog

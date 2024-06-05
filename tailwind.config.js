@@ -4,5 +4,9 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  important: true,
+  daisyui: {
+    themes: [],
+  },
+  plugins: [require("daisyui")],
 };
