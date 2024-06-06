@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import BlogCard from "../../components/Card";
-import Carousel from "../../components/Carousel";
+import Carousel from "../../components/carousel";
 
 const Home = () => {
   const { blogs } = useSelector((state) => state.blog);
