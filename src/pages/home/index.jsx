@@ -1,14 +1,14 @@
 import { useSelector } from "react-redux";
 import BlogCard from "../../components/Card";
-import Carousel from "../../components/carousel";
+import Carousel from "../../components/Carousel";
 
 const Home = () => {
   const { blogs } = useSelector((state) => state.blog);
 
   return (
     <>
-      <div className="flex w-full">
-        <div className="flex flex-col w-2/3 p-4">
+      <div className="flex flex-col lg:flex-row w-full">
+        <div className="flex flex-col w-full lg:w-2/3 p-4">
           <div className="w-full mx-auto">
             <Carousel />
           </div>
@@ -17,7 +17,7 @@ const Home = () => {
             <h1 className="text-center mt-10">No blogs found</h1>
           )}
           {!!blogs.length && (
-            <div className="flex flex-col items-center w-4/5 mx-auto">
+            <div className="flex flex-col items-center w-full lg:w-4/5 mx-auto">
               {blogs.map((post) => (
                 <BlogCard
                   key={post.id}
@@ -31,27 +31,26 @@ const Home = () => {
             </div>
           )}
         </div>
-        <div className="w-px bg-neutral-300 mx-4" />
+        <div className="w-full lg:w-px bg-neutral-300 my-4 lg:my-0 lg:mx-4" />
 
-        <div className="flex flex-col w-1/2 p-4">
-          <div className="flex">
-            <div className="w-80 p-4 bg-white">
+        <div className="flex flex-col w-full lg:w-1/2 p-4">
+          <div className="flex flex-col items-center lg:items-start">
+            <div className="w-full lg:w-80 p-4 bg-white">
               <div className="mb-6">
                 <h2 className="text-lg font-semibold mb-2">Staff Picks</h2>
                 <div className="flex items-center mb-4">
                   <img
-                    alt="Anshul Patidar"
+                    alt="Jeffery Smith"
                     className="w-10 h-10 rounded-full mr-3"
                     src="https://miro.medium.com/v2/resize:fill:96:96/1*ZCHil2J5kKDmeDpLygApHA.jpeg"
                     width="32"
                     height="32"
                     loading="lazy"
-                  ></img>
-
+                  />
                   <div>
                     <a
                       href="#"
-                      className="text-sm  text-black font-light hover:underline"
+                      className="text-sm text-black font-light hover:underline"
                     >
                       Jeffery Smith
                     </a>
@@ -64,17 +63,17 @@ const Home = () => {
                 </div>
                 <div className="flex items-center mb-4">
                   <img
-                    alt="Anshul Patidar"
+                    alt="Yutong Xue"
                     className="w-10 h-10 rounded-full mr-3"
                     src="https://miro.medium.com/v2/resize:fill:96:96/1*2fqJoMNihNVFYRyJD2IUQA@2x.jpeg"
                     width="32"
                     height="32"
                     loading="lazy"
-                  ></img>
+                  />
                   <div>
                     <a
                       href="#"
-                      className="text-sm  text-black font-light hover:underline"
+                      className="text-sm text-black font-light hover:underline"
                     >
                       Yutong Xue
                     </a>
@@ -87,17 +86,17 @@ const Home = () => {
                 </div>
                 <div className="flex items-center mb-4">
                   <img
-                    alt="Anshul Patidar"
+                    alt="Grace Loh Prasad"
                     className="w-10 h-10 rounded-full mr-3"
                     src="https://miro.medium.com/v2/resize:fill:96:96/1*4P6-QbfT-akzj_QF4beKKQ@2x.jpeg"
                     width="32"
                     height="32"
                     loading="lazy"
-                  ></img>
+                  />
                   <div>
                     <a
                       href="#"
-                      className="text-sm  text-black font-light hover:underline"
+                      className="text-sm text-black font-light hover:underline"
                     >
                       Grace Loh Prasad
                     </a>
@@ -108,7 +107,7 @@ const Home = () => {
                     </h3>
                   </div>
                 </div>
-                <a href="#" className="text-green-600 ">
+                <a href="#" className="text-green-600">
                   See the full list
                 </a>
               </div>
@@ -161,7 +160,7 @@ const Home = () => {
                     Climate Change
                   </a>
                 </div>
-                <a href="#" className="text-green-600  mt-2 block">
+                <a href="#" className="text-green-600 mt-2 block">
                   See more topics
                 </a>
               </div>
@@ -170,17 +169,17 @@ const Home = () => {
                 <h2 className="text-lg font-semibold mb-2">Who to Follow</h2>
                 <div className="flex items-center mb-4">
                   <img
-                    alt="Anshul Patidar"
+                    alt="smoul"
                     className="w-10 h-10 rounded-full mr-3"
                     src="https://miro.medium.com/v2/resize:fill:96:96/1*FA3WVwaJysEb3DpF-zDceA.jpeg"
                     width="32"
                     height="32"
                     loading="lazy"
-                  ></img>
+                  />
                   <div className="flex-1">
                     <a
                       href="#"
-                      className="text-md font-medium text-black  hover:underline"
+                      className="text-md font-medium text-black hover:underline"
                     >
                       smoul
                     </a>
@@ -195,13 +194,13 @@ const Home = () => {
                 </div>
                 <div className="flex items-center mb-4">
                   <img
-                    alt="Anshul Patidar"
+                    alt="Liu Zuo Lin"
                     className="w-10 h-10 rounded-full mr-3"
                     src="https://miro.medium.com/v2/resize:fill:64:64/1*Z5dMY4-vS6G69lMMdn3xIQ.jpeg"
                     width="32"
                     height="32"
                     loading="lazy"
-                  ></img>
+                  />
                   <div className="flex-1">
                     <a
                       href="#"
@@ -219,13 +218,13 @@ const Home = () => {
                 </div>
                 <div className="flex items-center mb-4">
                   <img
-                    alt="Anshul Patidar"
+                    alt="Alexander obidiegwu"
                     className="w-10 h-10 rounded-full mr-3"
                     src="https://miro.medium.com/v2/resize:fill:96:96/1*CqITj4Cs8XSIKyHICtkKyA.png"
                     width="32"
                     height="32"
                     loading="lazy"
-                  ></img>
+                  />
                   <div className="flex-1">
                     <a
                       href="#"

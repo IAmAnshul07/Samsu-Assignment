@@ -1,3 +1,4 @@
+import React from "react";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -29,21 +30,21 @@ const BlogCard = ({ title, author, date, body, id, tag, readTime }) => {
   };
 
   return (
-    <Box sx={{ width: "100%" }} style={{ marginBottom: "30px" }}>
+    <Box sx={{ width: "100%", marginBottom: "30px" }}>
       <Card
         variant="outlined"
-        style={{
+        sx={{
           height: "353px",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
           cursor: "pointer",
         }}
-        className="border-none important"
         onClick={handleOpenPost}
+        className="border-none"
       >
-        <CardContent style={{ overflow: "hidden" }}>
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <CardContent sx={{ overflow: "hidden" }}>
+          <Box sx={{ display: "flex", justifyContent: "space-between" }}>
             <Typography
               sx={{ fontSize: 14 }}
               color="text.secondary"
@@ -54,19 +55,15 @@ const BlogCard = ({ title, author, date, body, id, tag, readTime }) => {
             <a href={`/tag/${tag}`} className="text-blue-600 hover:underline">
               {tag}
             </a>
-          </div>
-          <Typography
-            variant="h5"
-            component="div"
-            style={{ marginTop: "20px" }}
-          >
+          </Box>
+          <Typography variant="h5" component="div" sx={{ marginTop: "20px" }}>
             {title}
           </Typography>
-          <div style={{ display: "flex", alignItems: "center" }}>
+          <Box sx={{ display: "flex", alignItems: "center" }}>
             <Typography
               variant="body2"
               component="p"
-              style={{
+              sx={{
                 overflow: "hidden",
                 textOverflow: "ellipsis",
                 display: "-webkit-box",
@@ -86,10 +83,12 @@ const BlogCard = ({ title, author, date, body, id, tag, readTime }) => {
                 marginLeft: "10px",
               }}
             />
-          </div>
+          </Box>
         </CardContent>
-        <div className="flex justify-between p-2 mt-10 mb-10">
-          <div className="flex items-center w-2/5">
+        <Box
+          sx={{ display: "flex", justifyContent: "space-between", p: 2, mt: 2 }}
+        >
+          <Box sx={{ display: "flex", alignItems: "center", flexWrap: "wrap" }}>
             <a
               href="#"
               className="bg-gray-200 mr-2 px-2 py-1 rounded-full text-sm text-gray-700 hover:bg-gray-300"
@@ -101,22 +100,18 @@ const BlogCard = ({ title, author, date, body, id, tag, readTime }) => {
               color="text.secondary"
               gutterBottom
             >
-              <p className="mt-1 mr-2">
-                <span>{randomData.readTime}</span>
-              </p>
+              <span>{randomData.readTime}</span>
             </Typography>
-            <span>·</span>
+            <span> · </span>
             <Typography
               sx={{ fontSize: 14 }}
               color="text.secondary"
               gutterBottom
             >
-              <p className="mt-1 ml-2">
-                <span>{randomData.selection}</span>
-              </p>
+              <span>{randomData.selection}</span>
             </Typography>
-          </div>
-          <div className="flex space-x-2">
+          </Box>
+          <Box sx={{ display: "flex", gap: 2 }}>
             <button
               aria-label="Add to list bookmark button"
               className="text-gray-600 hover:text-gray-800"
@@ -160,8 +155,8 @@ const BlogCard = ({ title, author, date, body, id, tag, readTime }) => {
                 ></path>
               </svg>
             </button>
-          </div>
-        </div>
+          </Box>
+        </Box>
         <Divider />
       </Card>
     </Box>
